@@ -10,7 +10,7 @@ Memory Pool을 사용한 것과 사용하지 않은 것끼리의 Performance 비
 --------------------------------------------------------
 performance는 memory 할당/해제를 MAX_LOOP_NUMBE만큼 반복하는데 걸린 시간을 기준으로 측정
 
-![ex_screenshot](./Img/line-graph.png)
+![line-graph](https://user-images.githubusercontent.com/38073072/125497378-46dcabbb-f439-401e-b2e7-9799a74921f6.png)
 
 
 
