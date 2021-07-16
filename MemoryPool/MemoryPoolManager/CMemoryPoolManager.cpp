@@ -1,16 +1,16 @@
-#include "CPoolManager.h"
+#include "CMemoryPoolManager.h"
 
-CPoolManager::CPoolManager(size_t arena_size) : m_ArenaSize(arena_size)
+CMemoryPoolManager::CMemoryPoolManager(size_t arena_size) : m_ArenaSize(arena_size)
 {
 	MemoryBlockHandle = std::make_unique<CMemoryBlock>(arena_size);
 }
 
-CPoolManager::~CPoolManager()
+CMemoryPoolManager::~CMemoryPoolManager()
 {
 
 }
 
-void* CPoolManager::Allocate(size_t size)
+void* CMemoryPoolManager::Allocate(size_t size)
 {	
 	try
 	{
@@ -45,7 +45,7 @@ void* CPoolManager::Allocate(size_t size)
 	return ret;
 }
 
-void CPoolManager::Deallocate(void* mem)
+void CMemoryPoolManager::Deallocate(void* mem)
 {
 	// 굳이 MemoryBlockHandle 이용안하고 갖고 있는 멤버 MemoryChunk 이용해서 Deallocate 가능
 	//MemoryBlockHandle->Deallocate(mem);

@@ -36,7 +36,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MemoryPool\PoolManager\CPoolManager.cpp">
+    <ClCompile Include="MemoryPool\MemoryPoolManager\CMemoryPoolManager.cpp">
       <Filter>MemoryPool\PoolManager</Filter>
     </ClCompile>
     <ClCompile Include="MemoryPool\BlockUnit\CBlockUnit.cpp">
@@ -53,7 +53,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MemoryPool\PoolManager\CPoolManager.h">
+    <ClInclude Include="MemoryPool\MemoryPoolManager\CMemoryPoolManager.h">
       <Filter>MemoryPool\PoolManager</Filter>
     </ClInclude>
     <ClInclude Include="MemoryPool\BlockUnit\CBlockUnit.h">

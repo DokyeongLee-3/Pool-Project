@@ -2,10 +2,10 @@
 #include <iostream>
 #include <memory>
 #include <chrono>
-#include "..\MemoryPool\PoolManager\CPoolManager.h"
+#include "..\MemoryPool\MemoryPoolManager\CMemoryPoolManager.h"
 
 #define arena_size 1000
-#define TEST_LOOP_COUNT 10000000
+#define TEST_LOOP_COUNT 100000000
 //#define TEST_LOOP_COUNT 1
 #define MEMORY_POOL
 
@@ -18,7 +18,7 @@ public:
 	~CTest();
 
 private:
-	std::unique_ptr<CPoolManager> PoolManager;
+	std::unique_ptr<CMemoryPoolManager> PoolManager;
 
 public:
 	// Test start -> 메모리 풀 사용/미사용 모두 실행

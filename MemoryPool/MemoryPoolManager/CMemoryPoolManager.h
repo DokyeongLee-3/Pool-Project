@@ -5,7 +5,7 @@
 #include "..\MemoryBlock\CMemoryBlock.h"
 
 
-class CPoolManager
+class CMemoryPoolManager
 {
 private:
 	std::unique_ptr<CMemoryBlock> MemoryBlockHandle;
@@ -16,8 +16,8 @@ private:
 	size_t m_ArenaSize;
 
 public:
-	CPoolManager(size_t arena_size);
-	~CPoolManager();
+	CMemoryPoolManager(size_t arena_size);
+	~CMemoryPoolManager();
 
 	void* Allocate(size_t size);
 	void Deallocate(void* mem);

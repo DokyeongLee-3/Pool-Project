@@ -141,14 +141,14 @@
   <ItemGroup>
     <ClCompile Include="MemoryPool\BlockUnit\CBlockUnit.cpp" />
     <ClCompile Include="MemoryPool\MemoryBlock\CMemoryBlock.cpp" />
-    <ClCompile Include="MemoryPool\PoolManager\CPoolManager.cpp" />
+    <ClCompile Include="MemoryPool\MemoryPoolManager\CMemoryPoolManager.cpp" />
     <ClCompile Include="Test\CTest.cpp" />
     <ClCompile Include="Main\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MemoryPool\BlockUnit\CBlockUnit.h" />
     <ClInclude Include="MemoryPool\MemoryBlock\CMemoryBlock.h" />
-    <ClInclude Include="MemoryPool\PoolManager\CPoolManager.h" />
+    <ClInclude Include="MemoryPool\MemoryPoolManager\CMemoryPoolManager.h" />
     <ClInclude Include="Test\CTest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
