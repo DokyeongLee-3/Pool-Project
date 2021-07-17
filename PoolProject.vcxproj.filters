@@ -51,6 +51,12 @@
     <ClCompile Include="Test\CTest.cpp">
       <Filter>Test</Filter>
     </ClCompile>
+    <ClCompile Include="ObjectPool\CObject.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectPool\ObjectPoolManager\CObjectPoolManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MemoryPool\MemoryPoolManager\CMemoryPoolManager.h">
@@ -64,6 +70,12 @@
     </ClInclude>
     <ClInclude Include="Test\CTest.h">
       <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool\CObject.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool\ObjectPoolManager\CObjectPoolManager.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

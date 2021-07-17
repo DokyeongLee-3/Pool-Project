@@ -139,6 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ObjectPool\ObjectPoolManager\CObjectPoolManager.cpp" />
+    <ClCompile Include="ObjectPool\CObject.cpp" />
     <ClCompile Include="MemoryPool\BlockUnit\CBlockUnit.cpp" />
     <ClCompile Include="MemoryPool\MemoryBlock\CMemoryBlock.cpp" />
     <ClCompile Include="MemoryPool\MemoryPoolManager\CMemoryPoolManager.cpp" />
@@ -146,6 +148,8 @@
     <ClCompile Include="Main\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ObjectPool\ObjectPoolManager\CObjectPoolManager.h" />
+    <ClInclude Include="ObjectPool\CObject.h" />
     <ClInclude Include="MemoryPool\BlockUnit\CBlockUnit.h" />
     <ClInclude Include="MemoryPool\MemoryBlock\CMemoryBlock.h" />
     <ClInclude Include="MemoryPool\MemoryPoolManager\CMemoryPoolManager.h" />
