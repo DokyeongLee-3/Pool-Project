@@ -18,9 +18,10 @@ Object Pool이란?
 ----------------
 프로그램에서 사용될 오브젝트 개수를 예측해서 미리 container에 할당해서 담아두고, 프로그래머가 필요할 때 마다 컨테이너에서 꺼내줌. 메모리 풀과 같이 잦은 new/malloc & delete/free로 오버헤드로 인한 성능저하를 어느 정도 개선할 수 있다.
 
-Object Pool을 사용한 것과 사용하지 않은 것끼리의 Performance 비교(loop 1번 iteration 할 때 마다 20개의 오브젝트를 할당및 해제)
+Object Pool을 사용한 것과 사용하지 않은 것끼리의 Performance 비교
 --------------------------------------------------------
 performance는 memory pool과 같은 방식으로 측정
+loop 1번 iteration 할 때 마다 20개의 오브젝트를 할당및 해제
 
 ![line-graph](https://user-images.githubusercontent.com/38073072/126048272-2a3b67d5-fd2a-48bd-a1e5-288974970998.png)
 
