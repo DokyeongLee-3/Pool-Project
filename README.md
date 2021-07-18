@@ -23,7 +23,7 @@ Object Pool을 사용한 것과 사용하지 않은 것끼리의 Performance 비
 performance는 memory pool과 같은 방식으로 측정  
 loop 1번 iteration 할 때 마다 20개의 오브젝트를 할당및 해제
 
-![line-graph](https://user-images.githubusercontent.com/38073072/126048272-2a3b67d5-fd2a-48bd-a1e5-288974970998.png)
+![line-graph (1)](https://user-images.githubusercontent.com/38073072/126066702-cc8b2c66-b231-415d-992f-a526b13589e3.png)
 
 
 
