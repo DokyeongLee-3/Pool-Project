@@ -4,7 +4,7 @@
 CObjectPoolManager::CObjectPoolManager(int count) : m_InitObjectCount(count)
 {
 	// 생성자 호출될 때 인자만큼 stack에 미리 오브젝트 공간 reserve
-	//m_ObjectVector.reserve(m_InitObjectCount);
+	m_ObjectVector.reserve(m_InitObjectCount);
 	for (int i = 0; i < m_InitObjectCount; ++i)
 	{
 		m_ObjectVector.emplace_back(new CObject);
