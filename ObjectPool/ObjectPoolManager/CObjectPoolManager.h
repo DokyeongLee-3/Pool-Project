@@ -11,6 +11,7 @@ private:
 	//std::stack<CObject*> m_ObjectStack;
 	std::vector<CObject*> m_ObjectVector;
 
+
 public:
 	CObjectPoolManager(int count);
 	~CObjectPoolManager();
