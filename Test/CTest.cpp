@@ -5,7 +5,6 @@ CTest::CTest()
 #ifdef MEMORY_POOL
 	MemoryPoolManager = std::make_unique<CMemoryPoolManager>(arena_size);
 #elif OBJECT_POOL
-	ObjectPoolManager = std::make_unique<CObjectPoolManager>(30);
 #endif
 }
 
@@ -22,6 +21,7 @@ void CTest::Run()
 #endif
 
 	auto start = std::chrono::high_resolution_clock::now();
+	ObjectPoolManager = std::make_unique<CObjectPoolManager>(30);
 	RunPool();
 	auto end = std::chrono::high_resolution_clock::now();
 	duration<double> ElapsedTime = end - start;
