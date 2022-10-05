@@ -46,7 +46,7 @@ void CTest::Run()
 #ifdef MEMORY_POOL
 	std::cout << "Elapsed Time Not Using MemoryPool: " << ElapsedTime.count() << std::endl;
 #elif OBJECT_POOL
-	std::cout<< "Elapsed Time Not Using ObjectPool: " << ElapsedTime.count() << std::endl;
+	std::cout << "Elapsed Time Not Using ObjectPool: " << ElapsedTime.count() << std::endl;
 #endif
 
 }
@@ -58,8 +58,27 @@ void CTest::RunPool()
 	for (int i = 0; i < TEST_LOOP_COUNT; ++i)
 	{
 		int* ptr1 = reinterpret_cast<int*>(MemoryPoolManager->Allocate(100));
+		int* ptr2 = reinterpret_cast<int*>(MemoryPoolManager->Allocate(100));
+		int* ptr3 = reinterpret_cast<int*>(MemoryPoolManager->Allocate(100));
+		int* ptr4 = reinterpret_cast<int*>(MemoryPoolManager->Allocate(100));
+		int* ptr5 = reinterpret_cast<int*>(MemoryPoolManager->Allocate(100));
+		int* ptr6 = reinterpret_cast<int*>(MemoryPoolManager->Allocate(100));
+		int* ptr7 = reinterpret_cast<int*>(MemoryPoolManager->Allocate(100));
+		int* ptr8 = reinterpret_cast<int*>(MemoryPoolManager->Allocate(100));
+		int* ptr9 = reinterpret_cast<int*>(MemoryPoolManager->Allocate(100));
+		int* ptr10 = reinterpret_cast<int*>(MemoryPoolManager->Allocate(100));
 
 		MemoryPoolManager->Deallocate(ptr1);
+		MemoryPoolManager->Deallocate(ptr2);
+		MemoryPoolManager->Deallocate(ptr3);
+		MemoryPoolManager->Deallocate(ptr4);
+		MemoryPoolManager->Deallocate(ptr5);
+		MemoryPoolManager->Deallocate(ptr6);
+		MemoryPoolManager->Deallocate(ptr7);
+		MemoryPoolManager->Deallocate(ptr8);
+		MemoryPoolManager->Deallocate(ptr9);
+		MemoryPoolManager->Deallocate(ptr10);
+
 	}
 #elif OBJECT_POOL
 	for (int i = 0; i < TEST_LOOP_COUNT; ++i)
@@ -117,8 +136,26 @@ void CTest::NotUsePool()
 	for (int i = 0; i < TEST_LOOP_COUNT; ++i)
 	{
 		int* ptr1 = (int*)malloc(100);
+		int* ptr2 = (int*)malloc(100);
+		int* ptr3 = (int*)malloc(100);
+		int* ptr4 = (int*)malloc(100);
+		int* ptr5 = (int*)malloc(100);
+		int* ptr6 = (int*)malloc(100);
+		int* ptr7 = (int*)malloc(100);
+		int* ptr8 = (int*)malloc(100);
+		int* ptr9 = (int*)malloc(100);
+		int* ptr10 = (int*)malloc(100);
 
 		free(ptr1);
+		free(ptr2);
+		free(ptr3);
+		free(ptr4);
+		free(ptr5);
+		free(ptr6);
+		free(ptr7);
+		free(ptr8);
+		free(ptr9);
+		free(ptr10);
 	}
 #elif OBJECT_POOL
 	for (int i = 0; i < TEST_LOOP_COUNT; ++i)
